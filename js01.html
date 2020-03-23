@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js01</title>
+   
+</head>
+<body>
+    <!-- 行内 -->
+    <button type="button" onclick="javascript:alert('带你我干嘛')" >点我</button>
+    <!-- 调用 -->
+    <button type="button" onclick="show2()" >点我</button>    
+    <!-- 引入外部独立的js文件 -->
+    <script src="/js/js01.js"></script>
+    <script>
+        function show(){
+            alert('点我干嘛');
+        }
+        var msg = "撒旦";
+        console.log(msg + 'sdfsfd');
+        // js常见类型
+        var variable = [1,2];
+        console.log(variable instanceof Array);
+
+        // 新增
+        variable.push("张三")
+        console.log(variable);
+        // 拼接 将数组所有元素接上，join里增加自己想要拼接的字符串
+        var rst = variable.join(" _");
+
+        // 插入&删除 从某个位置删除几个
+        variable.splice(1,2);
+        // 从某个位置插入几个元素
+        variable.splice(1,0,"ww",1);
+        variable.splice(3,0,"ww");
+
+        //遍历
+        console.log(rst);
+        console.log(variable);
+        // 弹出头元素--数组的末尾
+        console.log(variable.pop());
+        // 弹出尾元素
+        console.log(variable.shift());
+        // console.log(variable.push(1));
+        console.log(variable);
+
+        // 遍历
+        for(let i = 0; i < variable.length; i++){
+            var item = variable[i];
+            console.log(item);
+        }
+        // key 获取的是下标
+        for(var key in variable){
+            var item = variable[key];
+            console.log(key);
+        }
+        // lanmbada 函数式编程，一切以函数作为参数，
+        variable.forEach(function(item,index){
+            console.log(index + "<=>" + item);
+        })
+        // 新语法
+        variable.forEach(item => {
+            console.log(item);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+body{
+    background: #dceaf5 url(/imgs/reg_bg.jpg) center top no-repeat ;
+    background-size: 100% 250px;
+}
+/* 新浪头 */
+.sina_reg_head{
+    position: relative;
+    margin: 0 auto;
+    padding: 50px 0 15px;
+    width: 900px;
+    height: 80px;
+    background: url(/imgs/tx_logo.gif) left 30px no-repeat;
+}
+.link{
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+}
+.link_a{
+    padding: 0 10px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.link_a:hover{
+    text-decoration: underline;
+}
+.sep{
+    border-right: #fff 1px solid;
+}
+/* 新浪注册的主体：表单 */
+.sina_reg_main{
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 630px;
+    background-color: #fefefe;
+    border-top: #f80 2px solid;
+}
+.sina_little_bird{
+    position: absolute;
+    right: -55px;
+    top: 30px;
+    width: 77px;
+    height: 100px;
+    background: url(/imgs/lang.png) left top no-repeat;
+}
+.reg_main_head{
+    height: 58px;
+    display: flex;
+    padding: 18px 0 0 20px;
+    /* border-bottom: #d9d9d9 1px solid; */
+}
+.reg_item{
+    position: relative;
+    top: 1px;
+    z-index: 1;
+    margin-right: 12px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: #d9d9d9 1px solid;
+    /* border-bottom-width: 0; */
+    background-color: #fefefe;
+    cursor: pointer;
+}
+.item_selected{
+    border-bottom-width: 0;
+}
+.unselected:hover{
+    background-color:#0a8cd2;
+    color: white;
+}
+.reg_main_body{
+    display: flex;
+    border: #d9d9d9  solid;
+    border-width: 1px 0;
+    height: 470px;
+}
+.main_form{
+    padding: 30px 0 0 130px;
+    width:600px;
+    background: url(/imgs/reg_mail.png) 40px 50px no-repeat; 
+    border-right: #d9d9d9 1px solid;
+}
+.main_aside{
+    padding: 50px 0 0 40px;
+    width: 300px;
+}
+.form_el_box{
+    display: flex;
+    margin-top: 20px;
+    height: 32px;
+    align-items: center;
+
+}
+.form_el_lbl{
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    /* 设置弹性收缩为0 */
+    flex-shrink: 0;
+}
+/* 前置元素，表单元素之外其他标签都有前后置元素 */
+.form_el_lbl::before{
+    /* 前置元素中得文字内容，该项必须要有，后置元素将before换成after */
+    content: "*";
+    color: red;
+    margin-right: 10px;
+}
+.form_el_txt{
+    border: #d9d9d9 1px solid;
+    width: 202px;
+    height: 32px;
+    text-indent: 5px;
+    margin-right: 10px;
+}
+.form_el_wb_login{
+    text-indent: 100px;
+    margin-top: 10px;
+}
+.other_login{
+    color: #0a8cd2;
+    margin-left: 5px;
+}
+.other_login:hover,
+.read:hover,
+.form_el_hint:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.form_el_hint{
+    display: flex;
+    align-items: center;
+    color: #0a8cd2;
+    font-size: 12px;
+}
+.hint_icon{
+    /* display: inline-block; */
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background: url(/imgs/reg_ico.png) -60px top no-repeat;
+}
+.ckbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ck{
+    margin-right: 5px;
+}
+.show{
+    width: 55px;
+}
+.shrink{
+    width: 70px;
+}
+.validatecode{
+    margin-right: 10px;
+    height: 32px;
+    width: 100px;
+    text-align: center;
+    line-height: 32px;
+    background-color: #bdbdbd;
+    color: #0a8cd2;
+    font-family: "Bodoni MT Black";
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.btn_box{
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100px;
+    justify-content: space-between;
+}
+.submit{
+    width: 202px;
+    height: 42px;
+    background: #25cf33;
+    color: #dceaf5;
+    border-radius: 6px;
+    font-weight: bolder;
+
+}
+.submit:hover{
+    color: #25cf33;
+    background: #dceaf5;
+    box-shadow: 0 0 20px #ddd;
+
+    /* 设置hover效果的速度 */
+    -webkit-transition-duration: 0.4s;
+    /* 线性渐变 */
+    /* background: linear-gradient(to bottom, #25cf33,#178b21); */
+
+}
+.read{
+    color: #0a8cd2;
+}
+.read::before{
+    content: "《";
+    margin-right: 5px;
+}
+.read::after{
+    content: "》";
+    margin-left: 5px;
+}
+.links{
+    margin-bottom: 10px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.linka{
+    color: #0a8cd2;
+    margin-right: 20px;
+    font-size: 12px;
+}
+.foot_info{
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.reg_main_foot{
+    padding: 15px 0 0 30px;
+}
+.copyright{
+    font-size: 12px;
+}
+
