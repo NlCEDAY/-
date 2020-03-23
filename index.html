@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>3D Shading with Box-Shadows</title>
+		<meta name="description" content="A shading effect for 3D transformed elements" />
+		<meta name="keywords" content="css3, transforms, shadow, shading, 3d, box shadow" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7243260-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<!-- <div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/MultiLevelPushMenu/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=16316"><span>Back to the Codrops Article</span></a></span>
+			</div> -->
+			<header>
+				<!-- <h1>3D Shading with Box-Shadows <span>A shading effect for 3D transformed elements</span></h1>   -->
+			</header>
+			<div class="wrapper">
+				<ul class="stage clearfix">
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster">
+								<!-- <div class="title">
+									<img class="title_imgs" src="/10-3D-CSS-/box-shadows/img/youhaohuo.png" alt="" >
+									<span class="title_code"></span>
+									<span class="title_profile">与品质生活不期而遇</span>
+								</div>
+								<div class="shop">
+									<div class="shop_info">
+										<img class="shop_img" src="/10-3D-CSS-/box-shadows/img/shoe.jpg" alt="">
+										<a class="shop_title" href="#">专柜aj断码处理</a>
+										<span class="shop_profile">色彩鲜艳的图案</span>
+										<a  class="smile" href="#">0人说好</a>
+									</div>
+									<div class="shop_info">
+										<img class="shop_img" src="/10-3D-CSS-/box-shadows/img/car.jpg" alt="">
+										<a class="shop_title" href="#">iXoost兰博基尼引擎</a>
+										<span class="shop_profile">ixoost是一个使用跑车</span>
+										<a  class="smile" href="#">0人说好</a>
+									</div>
+								</div>
+								<div class="shop">
+									<div class="shop_info">
+										<img class="shop_img" src="/10-3D-CSS-/box-shadows/img/desk.jpg" alt="">
+										<a class="shop_title" href="#">B&O家用无线桌面</a>
+										<span class="shop_profile">这款音响采用了蓝牙</span>
+										<a  class="smile" href="#">0人说好</a>
+									</div>
+									<div class="shop_info">
+										<img class="shop_img" src="/10-3D-CSS-/box-shadows/img/studio.jpg" alt="">
+										<a class="shop_title" href="#">小米有品蓝牙音响</a>
+										<span class="shop_profile">表面采用了阳极氧化</span>
+										<a  class="smile" href="#">0人说好</a>
+									</div> -->
+								<!-- </div> -->			
+							</div>
+							<div class="info">
+								<div class="title">
+									<img class="title_imgs" src="/img/youhaohuo.png" alt="" >
+									<span class="title_code"></span>
+									<span class="title_profile">与品质生活不期而遇</span>
+								</div>
+								<div class="shop">
+									<div class="shop_info">
+										<img class="shop_img" src="/img/shoe.jpg" alt="">
+										<a class="shop_title" href="#">专柜aj断码处理</a>
+										<span class="shop_profile">色彩鲜艳的图案</span>
+										<a  class="smile" href="#">0人说好</a>
+									</div>
+									<div class="shop_info">
+										<img class="shop_img" src="/img/car.jpg" alt="">
+										<a class="shop_title" href="#">iXoost兰博基尼引擎</a>
+										<span class="shop_profile">ixoost是一个使用跑车</span>
+										<a  class="smile" href="#">0人说好</a>
+									</div>
+								</div>
+								<div class="shop">
+									<div class="shop_info">
+										<img class="shop_img" src="/img/desk.jpg" alt="">
+										<a class="shop_title" href="#">B&O家用无线桌面</a>
+										<span class="shop_profile">这款音响采用了蓝牙</span>
+										<a  class="smile" href="#">0人说好</a>
+									</div>
+									<div class="shop_info">
+										<img class="shop_img" src="/img/studio.jpg" alt="">
+										<a class="shop_title" href="#">小米有品蓝牙音响</a>
+										<span class="shop_profile">表面采用了阳极氧化</span>
+										<a  class="smile" href="#">0人说好</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+<!-- 
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>Vengeance Valley</h1>
+									<span class="year">1951</span>
+									<span class="rating">NR</span>
+									<span class="duration">83 minutes</span>
+								</header>
+								<p>
+									A cattle baron takes in an orphaned boy and raises him, causing his own son to resent the boy. As they get older the resentment festers into hatred, and eventually the real son frames his stepbrother for fathering an illegitimate child that is actually his, seeing it as an opportunity to get his half-brother out of the way so he can have his father's empire all to himself.
+								</p>
+							</div>
+						</div>
+					</li> -->
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster">
+								<!-- <div class="title">
+									<img class="title_imgs" src="/10-3D-CSS-/box-shadows/img/aiguangjie.png" alt="" >
+									<span class="title_profile">献给聪明可爱的你</span>
+								</div>
+								<div class="shop">
+									<div class="shop_info">
+										<img class="shop_img" src="/10-3D-CSS-/box-shadows/img/逛街1.jpg" alt="">
+										<a class="shop_guang_title " href="#">闭眼入神高腰九分烟管裤女</a>
+										<div class="touxiang">
+											<img class="touxiang_img" src="/10-3D-CSS-/box-shadows/img/头像1.jpg" alt="">
+											<a class="tou_txt" href="#">F***泛</a>
+										</div>
+										
+									</div>
+									<div class="shop_info">
+										<img class="shop_img" src="/10-3D-CSS-/box-shadows/img/guangjie2.jpg" alt="">
+										<a class="shop_guang_title" href="#">金秋外套穿什么，复古名族风毛衣外套</a>
+										<div class="touxiang">
+											<img class="touxiang_img" src="/10-3D-CSS-/box-shadows/img/头像2.jpg" alt="">
+											<a class="tou_txt" href="#">十***全</a>
+										</div>
+									</div>
+								</div>
+								<div class="shop">
+									<div class="shop_info">
+										<img class="shop_img" src="/10-3D-CSS-/box-shadows/img/guangjie3.jpg" alt="">
+										<a class="shop_guang_title" href="#">秋冬新风尚时尚气质款马海毛套头毛衫</a>
+										<div class="touxiang">
+											<img class="touxiang_img" src="/10-3D-CSS-/box-shadows/img/头像3.jpg" alt="">
+											<a class="tou_txt" href="#">张***e</a>
+										</div>
+									</div>
+									<div class="shop_info">
+										<img class="shop_img" src="/10-3D-CSS-/box-shadows/img/逛街4.jpg" alt="">
+										<a class="shop_guang_title" href="#">舒适便利两穿乐福鞋</a>
+										<div class="touxiang">
+											<img class="touxiang_img" src="/10-3D-CSS-/box-shadows/img/头像3.jpg" alt="">
+											<a class="tou_txt" href="#">王***毒</a>
+										</div>
+									</div>
+								</div> -->
+							</div>
+							<div class="info">
+								<div class="title">
+									<img class="title_imgs" src="/img/aiguangjie.png" alt="" >
+									<span class="title_profile">献给聪明可爱的你</span>
+								</div>
+								<div class="shop">
+									<div class="shop_info">
+										<img class="shop_img" src="/img/逛街1.jpg" alt="">
+										<a class="shop_guang_title " href="#">闭眼入神高腰九分烟管裤女</a>
+										<div class="touxiang">
+											<img class="touxiang_img" src="/img/头像1.jpg" alt="">
+											<a class="tou_txt" href="#">F***泛</a>
+										</div>
+										
+									</div>
+									<div class="shop_info">
+										<img class="shop_img" src="/img/guangjie2.jpg" alt="">
+										<a class="shop_guang_title" href="#">金秋外套穿什么，复古名族风毛衣外套</a>
+										<div class="touxiang">
+											<img class="touxiang_img" src="/img/头像2.jpg" alt="">
+											<a class="tou_txt" href="#">十***全</a>
+										</div>
+									</div>
+								</div>
+								<div class="shop">
+									<div class="shop_info">
+										<img class="shop_img" src="/img/guangjie3.jpg" alt="">
+										<a class="shop_guang_title" href="#">秋冬新风尚时尚气质款马海毛套头毛衫</a>
+										<div class="touxiang">
+											<img class="touxiang_img" src="/img/头像3.jpg" alt="">
+											<a class="tou_txt" href="#">张***e</a>
+										</div>
+									</div>
+									<div class="shop_info">
+										<img class="shop_img" src="/img/逛街4.jpg" alt="">
+										<a class="shop_guang_title" href="#">舒适便利两穿乐福鞋</a>
+										<div class="touxiang">
+											<img class="touxiang_img" src="/img/头像3.jpg" alt="">
+											<a class="tou_txt" href="#">王***毒</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div><!-- /wrapper -->
+		</div><!-- /container -->
+		<!-- For the demo ad only -->   
+<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+	</body>
+</html>
